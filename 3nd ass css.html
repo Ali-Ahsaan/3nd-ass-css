@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+          h2{
+            color: aqua;
+          }
+       body{
+        background:linear-gradient(#2A7B9B,#57C785,#EDDD53);
+       } 
+       span{
+        font-size: 36px;
+      font-family: "PT Sans Narrow", sans-serif;
+      font-style: italic;
+       }
+       p{
+        line-height: 40px;
+       }
+    </style>
+  
+</head>
+<body>
+  <h2>Building Reliable Web Services: Principles and Pitfalls</h2>  
+ <b>Author:</b>  Sana Qureshi <b>|Date: </b>Oct 5, 2025
+  <p>Reliability is the silent contract between your service and users. It’s achieved through redundancy, automation, observability, and a culture that
+     expects failure and learns from it.</p>
+     <p>At the core of reliable systems are predictable failure modes. Anticipate what can fail — network links, third-party APIs, disk resources — and 
+        design graceful degradation. Use retries with exponential backoff for transient errors, and circuit breakers to avoid cascading failures when a
+         dependency is down.</p>
+<p>
+Automation reduces human error. Automate deployments, schema migrations, and rollbacks with
+ a tested pipeline. Reliable deployments are small, reversible, and observable. Combine health checks with automated load-balancing to route around unhealthy instances.
+</p>
+<br>
+<span>Invest in blameless postmortems. When incidents happen, reconstruct the timeline, collect data, 
+  and implement mitigations. Focus on fixing systems, not blaming people.
+</span>
+
+</body>
+</html>
